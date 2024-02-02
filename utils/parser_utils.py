@@ -53,6 +53,7 @@ def get_args():
     parser.add_argument('--num_samples_per_class', type=int, default=1, help='Number of samples per set to sample')
     parser.add_argument('--name_of_args_json_file', type=str, default="None")
 
+    os.environ['DATASET_DIR'] = '/content/HowToTrainYourMAMLPytorch'
     args = parser.parse_args()
     args_dict = vars(args)
     if args.name_of_args_json_file is not "None":
