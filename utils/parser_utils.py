@@ -22,7 +22,7 @@ def get_args():
     parser.add_argument('--seed', type=int, default=104)
 
     parser.add_argument('--gpu_to_use', type=int)
-    parser.add_argument('--num_dataprovider_workers', nargs="?", type=int, default=4)
+    parser.add_argument('--num_dataprovider_workers', nargs="?", type=int, default=2)
     parser.add_argument('--max_models_to_save', nargs="?", type=int, default=5)
     parser.add_argument('--dataset_name', type=str, default="omniglot_dataset")
     parser.add_argument('--dataset_path', type=str, default="datasets/omniglot_dataset")
